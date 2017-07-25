@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Login Page</title>
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+</head>
+
+<body>
+
+	<form id="login-form" action="userManagement/login!userValidate"  method="post">
+		<fieldset>
+		
+			<legend>登   录</legend>
+			<center><b>
+			<font size="7">
+			登录界面
+			</font>
+			</b>
+			</center>
+			<br />
+			<label for="login">学号</label>
+			<input type="text" id="login" name="userId" />
+			<div class="clear"></div>
+			
+			<label for="password">密码</label>
+			<input type="password" id="password" name="userPassword" />
+			<div class="clear"></div>
+			
+			<label for="_status" style="padding: 0;">身份</label>
+			<select name="userStatus" size="1"  id="_status" style="position: relative; top: 3px; margin: 0; " name="remember_me">
+				<option value="student">学生</option>
+				<option value="manager">管理员</option>
+				</select>
+			<div class="clear"></div>
+			
+			<br />
+			
+			<input type="submit" style="margin: -20px 0 0 287px;" class="button" name="commit" value="Log in"/>	
+			<a href="regedit.html">新用户注册</a>
+		</fieldset>
+	</form>
+
+<br /><br />
+<br />
+<br />
+<br />
+<br />
+
+
+
+	
+</body>
+
+</html>

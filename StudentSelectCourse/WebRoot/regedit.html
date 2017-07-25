@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>学生注册</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href="css/auto.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form name="form1" method="post" action="userManagement/stu_regedit!stuRegedit">
+	<fieldset>
+    <legend>注册界面</legend>
+	<div class="header wrapfix">
+
+		<div class="help">
+			<a href="login.html" target="_blank" title="">登录</a>
+
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<!-- 清除浮动 -->
+
+	<div class="wrap">
+
+		<div class="login_main_white">
+			<div class="login_main_announce">
+				<ol>
+					<b>注册须知：</b>
+					<li>1:网上选课系统。学生先填写个人信息，完成并提交后，会自动生成该学生学号。学生使用学号登录该系统。</li>
+					<li>2:温馨提示：学生请牢记自己学号，密码。</li>
+				</ol>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+
+<dl> 
+
+			
+				<table height="200">
+
+					<tr>
+						<td>姓名：</td>
+						<td><input name="stu.sname" type="text" value="" /></td>
+					</tr>
+
+
+
+					<tr>
+						<td>密码：</td>
+						<td><input name="stu.spassword" type="password" value="" />
+						</td>
+					</tr>
+
+					<tr>
+						<td>性别：</td>
+						<td><select name="stu.sxtp" size=1   >
+
+				<option value="男">男</option>
+				<option value="女">女</option>
+				</select></td>
+					</tr>
+
+					<br />
+					<br />
+
+
+
+					<tr>
+						<td>地址：</td>
+						<td><input name="stu.saddress" type="text" value="" />
+						</td>
+					</tr>
+
+
+
+					<tr>
+						<td>电话：</td>
+						<td><input name="stu.tel" type="text" value="" />
+						</td>
+					</tr>
+
+
+
+					<tr>
+						<td>专业：</td>
+						<td><select name="stu.pfsName" size=1>
+								<option value="0">= 请选择 =</option>
+								<option value="物联网工程">物联网工程</option>
+								<option value="信息安全">信息安全</option>
+								<option value="信息对抗">信息对抗</option>
+								<option value="网络工程">网络工程</option>
+								<option value="电子工程">电子工程</option>
+								<option value="软件工程">软件工程</option>
+								<option value="大气科学">大气科学</option>
+								<option value="通信工程">通信工程</option>
+								<option value="应用数学">应用数学</option>
+								<option value="环境科学">环境科学</option>
+ 								<option value="电子商务">电子商务</option>
+								<option value="对外汉语">对外汉语</option>
+						</select>
+						</td>
+					</tr>
+
+
+					</select>
+					<tr>
+						<td>年级：</td>
+						<td><select name="stu.grdName" size=1>
+
+								<option value="0">= 请选择 =</option>
+
+								<option value="大一">大一</option>
+
+								<option value="大二">大二</option>
+
+								<option value="大三">大三</option>
+
+								<option value="大四">大四</option>
+						</td>
+					</tr>
+
+					<tr>
+						<td><input type="submit" name="Submit2" value="确定注册" />
+						</td>
+				</table>
+
+			
+
+		</dl>
+
+	</div>
+
+  </fieldset>
+</form>
+
+</body>
+</html>

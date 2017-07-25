@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+     <constant name="struts.i18n.encoding" value="utf-8" />
+	<package name="userManagement" namespace="/userManagement"
+		extends="struts-default">
+             <!-- 注册 -->
+	<action name="stu_regedit" class="core.action.LoginAction">
+			<result>/jsp/regedit_success.jsp</result>
+			 <result name="ERROR">/jsp/regedit_fail.jsp</result> 
+		</action>
+		         <!-- 登录 -->
+		<action name="login" class="core.action.LoginAction">
+			<result name="stu_success">/sforward_success.html</result>
+			<result name="mng_success">/mforward_success.html</result>
+		</action>
+					<!-- 查询学生个人信息 -->
+		<action name="inquiry_stu" class="core.action.InquiryAction">
+			<result>/jsp/student_update.jsp</result>
+			<result name="ERROR">/jsp/student_login.jsp</result>
+		</action>
+                   <!-- 查询学生个人信息 -->
+		<action name="update_stu" class="core.action.InquiryAction">
+			<result>/jsp/update_success.jsp</result>
+			<result name="ERROR">/jsp/student_login.jsp</result>
+		</action>
+
+	</package>
+
+
+	<package name="CourseManagement" namespace="/CourseManagement"
+		extends="struts-default">
+				<!-- 查询已选课程 -->
+		<action name="query_exist" class="core.action.CourseInquiryAction">
+			<result>/jsp/show_exist.jsp</result>
+		</action>
+				<!-- 查询可选课程 -->
+		<action name="query_optional" class="core.action.CourseInquiryAction">
+			<result>/jsp/show_optional.jsp</result>
+			
+		</action>
+				<!-- 选课 -->
+		<action name="select_course" class="core.action.SelectCourseAction">
+			<result>/jsp/select_success.jsp</result>
+			<result name="input">/jsp/record_exist.jsp</result>
+			<result name="error">/jsp/data_error.jsp</result>
+		</action>
+
+				<!-- 退课 -->
+		<action name="select_quit" class="core.action.SelectCourseAction">
+			<result>/jsp/quit_success.jsp</result>
+			<result name="error">/jsp/data_error.jsp</result>
+		</action>
+
+
+	</package>
+
+
+	<package name="mngTest" namespace="/mngTest" extends="struts-default">
+ 			<!-- 添加学生 -->
+		<action name="addstu" class="core.action.ManagementAction">
+			<result>/jsp/add_success.jsp</result>
+		</action>
+			<!-- 添加课程 -->
+		<action name="addcourse" class="core.action.ManagementAction">
+			<result>/jsp/add_success.jsp</result>
+		</action>
+					
+		<action name="show_some_course" class="core.action.ManagementAction">
+			<result>/jsp/show_some_course.jsp</result>
+		
+		</action>
+					
+		<action name="show_some_student" class="core.action.ManagementAction">
+			<result>/jsp/show_some_student.jsp</result>
+			
+		</action>
+		<action name="delete_course" class="core.action.ManagementAction">
+			<result>/jsp/delete_success.jsp</result>
+			
+		</action>
+		
+		<action name="delete_stu" class="core.action.ManagementAction">
+			<result>/jsp/delete_success.jsp</result>
+			
+		</action>
+	</package>
+	
+	
+
+</struts>
